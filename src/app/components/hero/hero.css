@@ -1,0 +1,94 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background-color: #f4f7f9;
+  min-height: 80vh;
+  overflow: hidden;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-text p:first-child {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #003366;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text p span {
+  color: #e63946;
+  font-size: 4.2rem;
+}
+
+/* Second line: Slogan */
+.hero-text p:last-child {
+  font-size: 1.4rem;
+  color: #555555;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  border-left: 4px solid #e63946;
+  padding-left: 15px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.1));
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+    min-height: auto;
+  }
+
+  .hero-text {
+    margin-bottom: 50px;
+  }
+
+  .hero-text p:first-child {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p:last-child {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .hero-image {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+  }
+}

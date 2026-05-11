@@ -1,0 +1,49 @@
+/* Section Styling */
+.languages-section {
+  padding: 60px 10%;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.languages-section .container-header p {
+  color: #666;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.language-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.language-item {
+  background-color: #ffffff;
+  color: #003366; /* Deep Navy */
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.language-item:hover {
+  border-color: #e63946;
+  color: #e63946;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(230, 57, 70, 0.2);
+}
+
+@media (max-width: 768px) {
+  .language-item {
+    padding: 12px 30px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 250px;
+  }
+}

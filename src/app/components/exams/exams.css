@@ -1,0 +1,80 @@
+.exams-section {
+  padding: 80px 10%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.exam-header h2 {
+  font-size: 2.2rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.exam-header p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.exam-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.exam-item {
+  flex: 1;
+  min-width: 150px;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.logo-wrapper {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.4s ease;
+}
+
+.logo-wrapper img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.exam-item p {
+  font-weight: 700;
+  color: #333;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.exam-item:hover {
+  transform: translateY(-5px);
+}
+
+.exam-item:hover .logo-wrapper {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .exam-grid {
+    gap: 20px;
+  }
+
+  .exam-item {
+    min-width: 120px;
+  }
+
+  .logo-wrapper {
+    height: 80px;
+  }
+}

@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <div class="navbar-logo">
+    <!--<img src="assets\Logo.png" alt="Logo" />-->
+    <p>Logo</p>
+  </div>
+
+  <div class="hamburger" [class.active]="isMenuOpen" (click)="toggleMenu()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+  <div class="navbar-links" [class.active]="isMenuOpen">
+    <div class="close-menu" (click)="toggleMenu()">
+      <span class="close-icon">&times;</span>
+    </div>
+
+    <ul>
+      <li><a href="#" (click)="toggleMenu()">Home</a></li>
+      <li><a href="#" (click)="toggleMenu()">Gallery</a></li>
+      <li><a href="#" (click)="toggleMenu()">History</a></li>
+      <li><a href="#" (click)="toggleMenu()">Contact</a></li>
+      <li><a href="#" (click)="toggleMenu()">About</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-btns">
+    <button class="contact-btn" (click)="onClick()">Contact Us</button>
+  </div>
+</nav>
