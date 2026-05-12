@@ -1,1 +1,52 @@
-<p>contact works!</p>
+<section class="contact-section">
+  <div class="container-form">
+    <div class="contact-info">
+      <h2>Reach Out To Us</h2>
+      <div class="header-line"></div>
+      <p>
+        Have questions about enrollment or our courses? Speak to us directly via WhatsApp or Email
+        for a quick response.
+      </p>
+
+      <div class="contact-methods">
+        <a href="https://wa.me/0712821098" class="method-link whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <a
+          href="mailto:dicksonndumia19@gmail.com?subject=Hello I would like to know more about your courses&body=Hi, I would like to know more about your courses"
+          class="method-link email"
+        >
+          <i class="fas fa-envelope"></i> Email Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Side: Form -->
+    <div class="contact-form-wrapper">
+      <form class="actual-form" (submit)="sendEmail($event)">
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="email@example.com" required />
+        </div>
+
+        <div class="input-group">
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="How can we help you?"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn" value="send">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
