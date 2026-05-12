@@ -9,21 +9,11 @@ import { About } from './components/about/about';
 import { Courses } from './components/courses/courses';
 import { Languages } from './components/languages/languages';
 import { Exams } from './components/exams/exams';
+import { Footer } from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    RouterOutlet,
-    Navbar,
-    Hero,
-    Gallery,
-    History,
-    Contact,
-    About,
-    Courses,
-    Languages,
-    Exams,
-  ],
+  imports: [RouterOutlet, Navbar, Hero, Contact, About, Courses, Languages, Exams, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
