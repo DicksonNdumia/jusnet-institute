@@ -13,7 +13,7 @@ import { Footer } from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Hero, Contact, About, Courses, Languages, Exams, Footer],
+  imports: [RouterOutlet, Navbar, Hero, Contact, About, Gallery, Courses, Languages, Exams, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
